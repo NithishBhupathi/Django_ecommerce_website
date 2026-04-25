@@ -1,0 +1,232 @@
+body {
+    font-family: Arial;
+    background-color: #f5f5f5;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+}
+
+.product-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background:green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: darkgreen;
+}
+
+
+.logo {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    background: #222;
+    color: white;
+    padding: 15px 30px;
+    
+}
+.nav-links :hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;   
+}
+
+.nav-links a,
+.nav-links span,
+.nav-links form {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+     cursor: pointer;
+}
+
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+.logout-btn:hover {
+    text-decoration: none;
+}
+
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+}
+
+.cart-controls a {
+    margin: 0 10px;
+    background: white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cart-controls span {
+    font-weight: bold;
+}
+
+.go-cart-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.go-cart-btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white !important;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.go-cart-btn:hover {
+    background-color: #e65c00;
+}
+
+
+
+.qty-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+ .qty-box a {
+    padding: 5px 10px;
+    background: white;
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.qty-box span {
+    font-weight: bold;
+}  
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropbtn {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logout-btn {
+    background: #222;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}

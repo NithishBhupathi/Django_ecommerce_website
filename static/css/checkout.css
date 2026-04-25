@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.checkout-box {
+    width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.checkout-box input,
+.checkout-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.checkout-box button {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

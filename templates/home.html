@@ -1,0 +1,59 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container">
+
+    {% for product in products %}
+    <div class="card">
+        <img src="{{ product.image.url }}" class="product-img">
+        <h3>{{ product.name }}</h3>
+        <p>₹{{ product.price }}</p>
+
+        {% with found=False %}
+            {% for item in cart_items %}
+                {% if item.product.id == product.id %}
+                    <div class="qty-box">
+                        <a href="{% url 'decrease' item.id %}">➖</a>
+                        <span>{{ item.quantity }}</span>
+                        <a href="{% url 'increase' item.id %}">➕</a>
+                    </div>
+                    {% with True as found %}{% endwith %}
+                {% endif %}
+            {% endfor %}
+
+            {% if not found %}
+                <a href="{% url 'add_to_cart' product.id %}" class="btn">
+                    Add to Cart
+                </a>
+            {% endif %}
+        {% endwith %}
+
+    </div>
+    {% endfor %}
+
+</div>
+
+<div class="go-cart-section">
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'cart' %}" class="go-cart-btn">🛒 Go to Cart</a>
+    {% else %}
+        <a href="{% url 'login' %}?next=/cart/" class="go-cart-btn">🛒 Go to Cart</a>
+    {% endif %}
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
